@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Armários</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; 
+        }
+
+        .locker {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+        }
+
+        .available {
+            background-color: #28a745; /* Verde para disponível */
+            color: white;
+        }
+
+        .occupied {
+            background-color: #ffc107; /* Amarelo para ocupado */
+            color: white;
+        }
+
+        .overdue {
+            background-color: #dc3545; /* Vermelho para em atraso */
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+        }
+
+        .nav-icons {
+            position: fixed;
+            top: 20px;
+            font-size: 24px;
+            color: #000;
+        }
+
+        .nav-left {
+            left: 20px;
+        }
+
+        .nav-right {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<a href="#" class="nav-icons nav-left"><i class="fas fa-arrow-left"></i></a>
+<a href="#" class="nav-icons nav-right"><i class="fas fa-arrow-right"></i></a>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Prédio D</h1>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 38</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 38</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 38</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker available">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 34</h5>
+                    <p class="card-text">Disponível</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker available">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 35</h5>
+                    <p class="card-text">Disponível</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker available">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 36</h5>
+                    <p class="card-text">Disponível</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 37</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 38</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 39</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 40</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 41</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker occupied">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 42</h5>
+                    <p class="card-text">Ocupado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker overdue">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 43</h5>
+                    <p class="card-text">Em atraso</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker overdue">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 44</h5>
+                    <p class="card-text">Em atraso</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card locker overdue">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Armário 45</h5>
+                    <p class="card-text">Em atraso</p>
+                </div>
+            </div>
+        </div>
+        
